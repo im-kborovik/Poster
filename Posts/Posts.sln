@@ -8,6 +8,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Posts.Services", "Posts.Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Posts.Repositories", "Posts.Repositories\Posts.Repositories.csproj", "{6F36D432-359C-4451-8ED3-676C00FC70E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Posts.Migrator", "Posts.Migrator\Posts.Migrator.csproj", "{0A6E8CDA-DD8D-4124-8D59-7FB343EBD32F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{A9166591-D238-4715-AC68-553B90F5E7BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B056DEBE-A65A-4EB5-8100-D5BF43B8ABE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5F921FD9-EB67-4567-B8AA-C9DF3B14A622}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflow", "Workflow", "{595154DE-4D1A-4E50-BAE5-DF1A50F054EB}"
+	ProjectSection(SolutionItems) = preProject
+		..\docker-compose.yml = ..\docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +43,16 @@ Global
 		{6F36D432-359C-4451-8ED3-676C00FC70E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F36D432-359C-4451-8ED3-676C00FC70E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F36D432-359C-4451-8ED3-676C00FC70E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6E8CDA-DD8D-4124-8D59-7FB343EBD32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6E8CDA-DD8D-4124-8D59-7FB343EBD32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6E8CDA-DD8D-4124-8D59-7FB343EBD32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6E8CDA-DD8D-4124-8D59-7FB343EBD32F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BE704F3-867A-4AB5-B5D5-E70B951AD7EE} = {A9166591-D238-4715-AC68-553B90F5E7BC}
+		{0A6E8CDA-DD8D-4124-8D59-7FB343EBD32F} = {A9166591-D238-4715-AC68-553B90F5E7BC}
+		{571937C8-7AAE-4347-BB05-7E215AF3F3E2} = {B056DEBE-A65A-4EB5-8100-D5BF43B8ABE4}
+		{3B75DF6A-E52C-4D54-8647-ED24BCB0E3B8} = {B056DEBE-A65A-4EB5-8100-D5BF43B8ABE4}
+		{6F36D432-359C-4451-8ED3-676C00FC70E8} = {5F921FD9-EB67-4567-B8AA-C9DF3B14A622}
 	EndGlobalSection
 EndGlobal
